@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width" , initial-scale="1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>codesign</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+        });
+        $(document).ready(function () {
+            $("#flip-2").click(function () {
+                $("#panel-2").slideToggle("slow");
+            });
+        });
+        $(document).ready(function () {
+            $("#flip-3").click(function () {
+                $("#panel-3").slideToggle("slow");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="color-overlay"></div>
+    <div class="text">
+        <span class="p1">
+            cod
+        </span>
+        <span class="p2">
+            esign
+        </span>
+        <div class="line_2"></div>
+        <div class="line"></div>
+    </div>
+
+    <input type="checkbox" id="menu-toggle" />
+    <label id="trigger" for="menu-toggle"></label>
+    <label id="burger" for="menu-toggle"></label>
+    <ul id="menu">
+        <li>
+            <a href="#">
+                <div class="button_slide slide_down_1">Home</div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="button_slide slide_down_2">Services</div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="button_slide slide_down_3">Projects</div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="button_slide slide_down_4">Contact</div>
+            </a>
+        </li>
+    </ul>
+
+    <main>
+        <!--site title-->
+        <section class="site-title">
+        </section>
+    </main>
+
+    <div class="flip_btn">
+        <div id="flip">
+            <button class="btn">
+                Code
+            </button>
+        </div>
+        <div id="flip-2">
+            <button class="btn">
+                Design
+            </button>
+        </div>
+        <div id="flip-3">
+            <button class="btn">
+                Paint
+            </button>
+        </div>
+    </div>
+
+
+    <div id="panel">Hello world!</div>
+
+    <div id="panel-2">Hello world!</div>
+
+    <div id="panel-3">Hello world!</div>
+
+    <div class="container">
+        main content
+    </div>
+
+
+</body>
+
+</html>

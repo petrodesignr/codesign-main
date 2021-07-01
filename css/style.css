@@ -1,0 +1,308 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+li,
+a {
+    margin: 75px 0 -70px 20px;
+    color: white;
+    font: 22px 'Bebas Neue', cursive;
+    font-weight: 50;
+    line-height: 1.8;
+    text-indent: 1%;
+    text-decoration: none;
+    text-transform: none;
+    list-style: none;
+    outline: 0;
+    display: none;
+}
+
+li {
+    width: 0px;
+    text-indent: 60px;
+}
+
+a:focus {
+    display: block;
+    color: #333;
+    background-color: #eee;
+    transition: all .5s;
+}
+
+.btn_bg {
+    background-color: #2ABB9B;
+    height: 60px;
+    width: 170px;
+    position: absolute;
+    top: 0;
+    margin-left: -208px;
+    z-index: -1;
+    transition: 1.0s;
+    border-radius: 5px;
+
+}
+
+
+aside {
+    position: absolute;
+    text-align: center;
+    display: block;
+    margin-top: 150px;
+}
+
+.color-overlay {
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: .3;
+    position: absolute;
+}
+
+img {
+    width: 50%;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+
+/* Burger menu */
+
+#trigger,
+#burger,
+#burger:before,
+#burger:after {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    background: white;
+    width: 30px;
+    height: 3.5px;
+    transition: 0.8s ease;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#burger {
+    position: fixed;
+    top: 25px;
+}
+
+#trigger {
+    height: 25px;
+    background: none;
+}
+
+#burger:before {
+    content: " ";
+    top: 10px;
+    left: 0;
+}
+
+#burger:after {
+    content: " ";
+    top: 20px;
+    left: 0;
+}
+
+#menu-toggle:checked+#trigger+#burger {
+    top: 35px;
+    transform: rotate(180deg);
+    transition: transform 0.8s ease;
+}
+
+#menu-toggle:checked+#trigger+#burger:before {
+    width: 20px;
+    top: -2px;
+    left: 18px;
+    transform: rotate(45deg) translateX(-5px);
+    transition: transform 0.8s ease;
+}
+
+#menu-toggle:checked+#trigger+#burger:after {
+    width: 20px;
+    top: 2px;
+    left: 18px;
+    transform: rotate(-45deg) translateX(-5px);
+    transition: transform 0.8s ease;
+}
+
+#menu {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 110px;
+    height: 110px;
+    animation: not-checked-anim .2s ease;
+    transition: .2s;
+}
+
+ul li {
+    background-color: chartreuse;
+}
+
+.button_slide {
+    color: #FFF;
+    border-radius: 5px;
+    padding: 1px 10px 0 10px;
+    margin: 0 0 0 0;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #D80286;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.slide_down_1:hover {
+    box-shadow: inset 0 100px 0 0 #D80286;
+}
+
+.slide_down_2:hover {
+    box-shadow: inset 0 100px 0 0 #D80286;
+}
+
+.slide_down_3:hover {
+    box-shadow: inset 0 100px 0 0 #D80286;
+}
+
+.slide_down_4:hover {
+    box-shadow: inset 0 100px 0 0 #D80286;
+}
+
+
+/*li a:hover + .btn_bg 
+{
+    width: 252px;
+    margin-left: -40px;
+}
+*/
+
+#menu {
+    position: fixed;
+}
+
+#menu-toggle:checked+#trigger+#burger+#menu {
+    animation: checked-anim 0.8s ease both;
+}
+
+#menu-toggle:checked+#trigger~#menu>li,
+a {
+    display: block;
+}
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    display: none;
+}
+
+main .site-title {
+    background: url(../img/codesign_1.jpeg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+
+/**Logo_Animation**/
+
+.text {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 30%;
+    letter-spacing: 15px;
+    font-size: 126px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.p1 {
+    color: rgb(255, 94, 121);
+    position: relative;
+    margin-bottom: 0px;
+    -webkit-animation: cod 1s ease 2s forwards;
+    animation: cod 1.5s ease 1.5s forwards;
+}
+
+.p2 {
+    color: navy;
+}
+
+/* Second page */
+
+.flip_btn {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#flip {
+    margin: 10px;
+}
+
+#flip-2 {
+    margin: 10px;
+}
+
+#flip-3 {
+    margin: 10px;
+}
+
+
+.btn {
+    margin-top: 1%;
+    padding: 20px;
+    border: none;
+    border-radius: 2rem;
+    text-decoration: none;
+    outline: none;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+}
+
+#panel {
+    width: auto;
+    height: 5rem;
+    background-image: url(../Pexels/photo-247791.png);
+    background-size: cover;
+    background-position: center;
+    display: none;
+    color: white;
+}
+
+#panel-2 {
+    width: auto;
+    height: 5rem;
+    background-image: url(../Pexels/photo-459653.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: none;
+    color: white;
+}
+
+#panel-3 {
+    width: auto;
+    height: 5rem;
+    background-image: url(../Pexels/pexels-cottonbro-3777876.jpg);
+    background-size: cover;
+    background-position: center;
+    display: none;
+    color: white;
+}
+
+.container {
+    width: auto;
+    height: 350px;
+    background-image: url(../Pexels/pexels-pixabay-270695.jpg);
+    background-size: cover;
+    background-position: center;
+    background-position-y: 40%;
+}
